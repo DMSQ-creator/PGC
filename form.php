@@ -89,7 +89,7 @@ $captcha		=	isset($_POST['g-recaptcha-response'])?$_POST['g-recaptcha-response']
 		  //echo '<p class="step"><a href="javascript:history.back(-1);" class="button"><< Back</a></p>';
           //exit;
         }
-	$secretKey = "6Lf7OKshAAAAAFWtm_fuMIBV4NErLTVdEdElx2pB";//密钥
+	$secretKey = "6Lf7OKshAAAAAFWtm_fuMIBV4NErLTVdEdElx2pB";//此密钥用于您的网站和 reCAPTCHA 之间的通信
 	$ip = $_SERVER['REMOTE_ADDR'];
         $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
 	$responseKeys = json_decode($response,true);
