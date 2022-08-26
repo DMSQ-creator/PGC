@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Google recapcha demo - Codeforgeek</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <body>
+    <h1>Google reCAPTHA Demo</h1>
+    <form id="comment_form" action="form.php" method="post">
+    	<input type="name" name="name" placeholder="Type your name" size="40"><br><br>
+      <input type="email" name="email" placeholder="Type your email" size="40"><br><br>
+      <textarea name="content" placeholder="Please input your inquiry" rows="8" cols="39"></textarea><br><br>
+      <div class="g-recaptcha" data-sitekey="6Lf7OKshAAAAAFi7JXJc_EBqOdOq0JgTrN_7_U1s"></div><br>
+      <input style="width: 20em;height: 3em;font-size: inherit;" type="submit" name="submit" value="Post comment"><br><br>
+    </form>
+  </body>
+</html>
